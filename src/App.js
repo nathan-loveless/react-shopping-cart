@@ -20,15 +20,14 @@ function App() {
 
 	const removeItem = product => {
 		// add the given item to the cart
+		console.log(product);
+		setCart([]);
 		
-		const filterArray = cart.filter(item => {
-			if(product.id === item.id)
-			return item;
-		})
+		const filterArray = cart.filter(item => (
+			product.id !== item.id
+		))
 		setCart([...cart, filterArray]);
 	};
-
-	console.log(products);
 
 	return (
 		<div className="App">
