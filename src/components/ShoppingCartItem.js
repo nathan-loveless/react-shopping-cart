@@ -1,5 +1,8 @@
 
 import React from 'react';
+// Import cartContext
+// Create Hook with remoteItem
+// App.js remoteItem, newCart then filter it with item and index
 
 const Item = props => {
 	
